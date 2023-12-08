@@ -2,10 +2,11 @@ import React from 'react'
 import Image from 'next/image';
 import { MdOutlineMailOutline } from "react-icons/md";
 import { MdOutlineFileDownload  } from "react-icons/md";
-import RESUME from '../../img/Resume.pdf'
+// import RESUME from '../../img/Resume.pdf'
 import user from '../../img/Users.jpg'
 
 const Home = () => {
+  const RESUME = '../../img/Resume.pdf'
   return (
     <div className='bg-[#222a36] p-7' id='home'>
         {/* navbar */}
@@ -30,7 +31,8 @@ const Home = () => {
         {/* hero section */}
         <div className='flex justify-around'>
             <div>
-                <h1 className='font-serif mt-20 ml-28 text-[4rem] font-bold'>Hello!<br></br>I'm Priya </h1>
+                <h1 className='font-serif mt-20 ml-28 text-[4rem] font-bold'>Hello!<br></br>I&apos;m
+ Priya </h1>
                 <p className='text-2xl text-slate-600 max-w-[30rem] ml-28 mt-3'>I’am Fullstack <span className='text-white'>web developer</span> based in India who loves to craft attractive design experiences for the web.</p>
                 <div className=' mt-8  ml-28 flex gap-5'>
                 <a href='mailto:priyakumari2002002@gmail.com' className=' bg-[#676CDB] hover:bg-blue-700 text-white font-bold py-2 px-2 rounded flex items-center gap-2'> <MdOutlineMailOutline />Email Me</a>

@@ -3,7 +3,7 @@ import { CiGlobe } from 'react-icons/ci';
 import axios from 'axios';
 import { FaGithub, FaLinkedin, FaTwitter, FaArrowRight } from 'react-icons/fa';
 import {toast} from 'react-hot-toast'
-const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+const apiKey:string= process.env.NEXT_PUBLIC_API_KEY || "4000"
 
 const Contact = () => {
   const [name,setName] = useState('');
@@ -12,18 +12,15 @@ const Contact = () => {
   
   
 
-  function handleChangeName(event){
+  function handleChangeName(event: React.ChangeEvent<HTMLInputElement>) {
     setName(event.target.value);
   }
-  console.log(name);
-  console.log(email);
 
-  console.log(message);
-  const handleChangeEmail = (event) =>{
+  const handleChangeEmail = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value);
   }
 
-  const handleChangeMessage = (event) =>{
+  const handleChangeMessage = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setMessage(event.target.value);
   }
 
@@ -53,7 +50,8 @@ const Contact = () => {
       <div className='flex gap-52 m-28 p-5'>
         <div className='flex-row'>
           <div className='text-6xl font-serif font-extrabold'>
-            Let's <br></br>Connect
+          Let&apos;s
+ <br></br>Connect
           </div>
           <div className='flex text-3xl'>
             <p className='p-4'>
