@@ -50,7 +50,7 @@ const Contact = () => {
       <div className='flex gap-52 m-28 p-5'>
         <div className='flex-row'>
           <div className='text-6xl font-serif font-extrabold'>
-          Let&apos;s
+          Let&apos; s
  <br></br>Connect
           </div>
           <div className='flex text-3xl'>
