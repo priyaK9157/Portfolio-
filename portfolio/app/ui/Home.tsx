@@ -31,7 +31,7 @@ const Home = () => {
         {/* hero section */}
         <div className='flex justify-around'>
             <div>
-                <h1 className='font-serif mt-20 ml-28 text-[4rem] font-bold'>Hello!<br></br>I&apos;m
+                <h1 className='font-serif mt-20 ml-28 text-[4rem] font-bold'>Hello!<br></br>I&apos; m
  Priya </h1>
                 <p className='text-2xl text-slate-600 max-w-[30rem] ml-28 mt-3'>I’am Fullstack <span className='text-white'>web developer</span> based in India who loves to craft attractive design experiences for the web.</p>
                 <div className=' mt-8  ml-28 flex gap-5'>
